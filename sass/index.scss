@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import "reset";
+@import "variables";
+
+body {
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: $font-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-color: $pale-blue;
+  background-image: url("../images/pattern-background-mobile.svg");
+}
+
+.card {
+  background-color: $white;
+  width: 90vw;
+  max-width: 330px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+  .card-text {
+    padding: 10px 24px 20px 24px;
+    color: $desaturated-blue;
+
+    h1 {
+      margin-block-start: 16px;
+      margin-block-end: 16px;
+      color: $dark-blue;
+      font-size: 22px;
+      font-weight: 900;
+    }
+    p {
+      font-size: 15px;
+      padding: 0 6px;
+      line-height: 1.8;
+      margin-block-end: 24px;
+      letter-spacing: 0.6px;
+      font-weight: 500;
+    }
+  }
+  .promo {
+    width: 100%;
+    padding: 18px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $very-pale-blue;
+    border-radius: 12px;
+    margin-block-end: 24px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+
+    img {
+      width: 46px;
+      margin-inline-end: 18px;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      text-align: left;
+      span {
+        font-weight: 900;
+        letter-spacing: 0.6px;
+        color: $dark-blue;
+      }
+    }
+    a {
+      font-weight: 900;
+      font-size: 12px;
+      color: $bright-blue;
+    }
+  }
+  button {
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    border: none;
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    box-shadow: 2px 15px 20px 0px rgba(56, 41, 224, 0.2);
+    &.payment {
+      background-color: $bright-blue;
+      color: $white;
+      border-radius: 12px;
+      margin-block-end: 20px;
+    }
+  }
+  .card-text a.cancel {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    color: $desaturated-blue;
+    padding: 10px;
+    letter-spacing: 0.6px;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .attribution {
+    display: none;
+  }
+}
