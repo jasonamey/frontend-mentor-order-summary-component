@@ -12,7 +12,7 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-color: $pale-blue;
-  background-image: url("../images/pattern-background-mobile.svg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/project-data-ja.appspot.com/o/front-end-mentor%2Forder-summary-component%2Fpattern-background-mobile.svg?alt=media&token=5955c47c-f130-4512-be87-4e5c228c1c53");
 }
 
 .card {
@@ -117,7 +117,7 @@ body {
 
 @media screen and (min-width: 375px) {
   body {
-    background-image: url("../images/pattern-background-desktop.svg");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/project-data-ja.appspot.com/o/front-end-mentor%2Forder-summary-component%2Fpattern-background-desktop.svg?alt=media&token=a868f608-4126-45f6-85dd-68d4876f8e64");
   }
 }
 
